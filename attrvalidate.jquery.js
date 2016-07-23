@@ -51,9 +51,9 @@
       showErrorSummary: true,
       errorSummaryMsg: 'Please fix the following issues before continuing:',
       validateTel: true,
-      telRegex: /^\+*\d{8,15}$/i,
+      telRegex: /^\+*[\d-()]{7,20}$/,
       validateEmail: true,
-      emailRegex: /^(([\w,\.,\-,\+]+)@[\w]+\.[\w,\.,\-]+)*$/i,
+      emailRegex: /^(\S+@\S+)*$/,
       validateDate: true,
       validateNumber: true
     }, options);
