@@ -84,10 +84,10 @@
           _groupsInitialised.push(groupName);
         }
       } else {
-        if ($(this).is('[required]') || 
-          (settings.validateTel && $(this).is('input[type="tel"]')) || 
-          (settings.validateEmail && $(this).is('input[type="email"]')) || 
-          (settings.validateDate && $(this).is('input[type="date"]')) || 
+        if ($(this).is('[required]') ||
+          (settings.validateTel && $(this).is('input[type="tel"]')) ||
+          (settings.validateEmail && $(this).is('input[type="email"]')) ||
+          (settings.validateDate && $(this).is('input[type="date"]')) ||
           (settings.validateNumber && $(this).is('input[type="number"]'))){
 
           $(this).attr('data-do-validate', true);
@@ -145,7 +145,7 @@
       return false;
     } else {
       if (typeof(settings.submitFunction) !== 'undefined') {
-        submitFunction();
+        settings.submitFunction();
       } else {
         _reqForm[0].submit();
       }
