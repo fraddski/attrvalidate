@@ -1,5 +1,5 @@
 /**
-* attrvalidate jQuery plugin v1.0
+* attrvalidate jQuery plugin v1.1
 * http://github.com/fraddski/attrvalidate
 * Licensed under MIT
 */
